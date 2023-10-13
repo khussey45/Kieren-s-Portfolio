@@ -14,7 +14,8 @@ const app = express(); // This initializes a new instance of an Express applicat
 app.engine('hbs', exphbs({
     extname: '.hbs', // specifies the handlebars extension as .hbs
     defaultLayout: 'layout', // this sets the name of the default layout of all pages
-    layoutsDir: path.join(__dirname, 'views/layouts') // this specifies the path of the layout.hbs directory 
+    views: path.join(__dirname, 'views')
+ // this specifies the path of the layout.hbs directory 
 }));
 app.set('view engine', 'hbs'); // sets view engine to handlebars
 
