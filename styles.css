@@ -114,3 +114,51 @@ footer {
 #langchain {
   color: yellow;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.navbar-toggler-icon  {
+  background-color: white; /* Change the background of the toggler */
+}
+
+
+.navbar-toggler-icon svg {
+  fill: white; /* Change the color of the SVG itself */
+}
+
+/* Example: Styling for screens smaller than 600px */
+@media (max-width: 600px) {
+  body {
+      background-color: lightblue;
+  }
+  
+}
+
+/* Assuming default styles for larger screens (desktop view) where cards are side by side */
+
+/* For medium screens */
+@media (max-width: 992px) {
+  .card {
+      margin: 0 auto 20px; /* Adds margin to the bottom of each card for separation */
+      display: block; 
+  }
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+  .card {
+      width: 90%; /* or any desired width */
+      margin: 0 auto 20px;
+  }
+}
+
+/* For extra-small screens */
+@media (max-width: 576px) {
+  .card {
+      width: 100%; /* occupies the full width of its container */
+      margin-bottom: 20px;
+  }
+}
+
