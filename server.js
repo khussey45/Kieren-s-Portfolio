@@ -10,11 +10,12 @@ const indexRouter = require('./Routers/index'); // This imports the index.js tha
 
 const app = express(); // This initializes a new instance of an Express application
 
+app.set('views', path.join(__dirname, "kierens-portfolio/views"));
 
 app.engine('hbs', exphbs({
     extname: '.hbs', // specifies the handlebars extension as .hbs
     defaultLayout: 'layout', // this sets the name of the default layout of all pages
-    layoutsDir: path.join(__dirname, "kieren's-portfolio/views/layouts")
+    layoutsDir: path.join(__dirname, "kierens-portfolio/views/layouts")
 
  // this specifies the path of the layout.hbs directory 
 }));
