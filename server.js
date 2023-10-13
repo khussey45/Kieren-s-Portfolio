@@ -22,7 +22,8 @@ app.engine('hbs', exphbs({
 app.set('view engine', 'hbs'); // sets view engine to handlebars
 
 
-app.use(express.static(__dirname)); // where to find static files i.e styles.css, server.js
+app.use(express.static(path.join(__dirname, '.')));
+ // where to find static files i.e styles.css, server.js
 
 
 app.use('/', indexRouter); // this is using the indexRouter that we created to serve the base url index.js
